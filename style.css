@@ -1,37 +1,58 @@
-h1 {
-    color: seagreen;
-    font-size: 65px;
-    font-family: sans-serif, Helvetica; 
-  }
+ol{
+  background-color: yellow;
+}
 
-  .cor-de-fundo {
-    background-color: whitesmoke;
-  }
+li:nth-child(even) {
+  background-color: green;
 
-  p {
-    font-weight: 600;
-  }
+}
+li:nth-child(odd) {
+  text-transform: uppercase;
 
-  body {
-    font-size: 16px;
-  }
+}
 
-  li {
-    font-style: italic;
-    line-height: 60px;
-    text-align: center;
-    text-decoration: underline;
-    font-size: 2em;
-  }
+h1 em,h3 em{
+  color: red;
+}
 
-  #verde {
-    background-color: green;
-  }
+.italico{
+  font-size: 40px;
+  border: 1px;
+  border-color: black;
+  border-style: ridge;
+}
 
-  #verde-escuro {
-    background-color: seagreen;
-  }
+li{
+  font-size: 20px;
+}
 
-  #azul {
-    background-color: blue;
-  }
+li em{
+  font-weight: bold;
+}
+
+#font-azul li:not(:nth-child(n + 4)) {
+  color: blue;
+}
+
+.fundo-rosa{
+  background-color: pink;
+}
+
+#aliados li a:hover {
+  font-weight: 700;
+}
+#aliados li a[href*="stackoverflow"] {
+  color: orange;
+}
+#aliados li a[href*="w3schools"] {
+  color: green;
+}
+#aliados li a[href*="mozilla"] {
+  color: black;
+}
+#aliados li a[href*="devdocs"] {
+  color: yellow;
+}
+#aliados li a[href*="trybe"] {
+  color: green;
+}
