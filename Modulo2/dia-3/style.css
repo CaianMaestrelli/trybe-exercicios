@@ -1,0 +1,13 @@
+h1, p {
+
+    text-align: center;
+
+}
+
+ol:hover {
+    background-color: blue;
+}
+
+ol:active {
+    background-color: rgb(247, 8, 195);
+}
