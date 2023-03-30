@@ -1,0 +1,32 @@
+let tasksList = ['Tomar café', 'Reunião', 'Brincar com o cachorro'];
+
+console.log(tasksList.length);
+
+let searchForFirstTask = tasksList[0];
+console.log(searchForFirstTask);
+// Tomar café
+
+let searchForLastTask = tasksList[tasksList.length - 1];
+console.log(searchForLastTask);
+// Brincar com o cachorro
+
+
+//Exercicio1
+let menu = ['Home', 'Serviços', 'Portfólio', 'Links'];
+let menuServices = menu[1];
+
+console.log(menuServices);
+
+let indexOfPortfolio = menu.indexOf('Portfólio');
+
+console.log(indexOfPortfolio);
+
+menu.push('Contato')
+console.log(menu)
+
+
+let groceryList = ['Arroz', 'Feijão', 'Alface', 'Melancia'];
+
+for(let index = 0; index < groceryList.length; index += 1) {
+    console.log(groceryList[index]);
+}
