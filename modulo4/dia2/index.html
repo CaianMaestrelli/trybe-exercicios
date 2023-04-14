@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício</title>
+    <style>
+      section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      // COLOQUE SEU CÓDIGO AQUI
+      //tarefa 1
+      const h1 = document.createElement("h1");
+      h1.innerText = "TrybeTrip - Agência de Viagens";
+      document.body.appendChild(h1);
+
+      //tarefa 2
+      const mainContent = document.createElement("main");
+      mainContent.className = "main-content";
+      document.body.appendChild(mainContent);
+
+      //tarefa 3
+      const centerContent = document.createElement("section");
+      mainContent.className = "center-content";
+      document.body.appendChild(centerContent);
+
+      //tarefa 4
+      const paragraph = document.createElement("p");
+      paragraph.innerText = "Algum texto";
+      document.body.appendChild(paragraph);
+
+      //tarefa 5
+      const leftContent = document.creataeElement("section");
+      leftContent.className = "left-content";
+      mainContent.appendChild(rightContent);
+
+      //tarefa 6
+      const rightContent = document.createElement("section");
+      rightContent.className = "right-content";
+      mainContent.appendChild(rightContent);
+
+      //tarefa 7
+      const img = document.createElement("img");
+      img.src = "https://picsum.photos/200";
+      img.className = "small-image";
+      leftContent.appendChild(img);
+
+      //tarefa 8
+      const ul = document.createElement("ul");
+      const numeros = [
+        "um",
+        "dois",
+        "tres",
+        "quatro",
+        "cinco",
+        "seis",
+        "sete",
+        "oito",
+        "nove",
+        "dez",
+      ];
+
+      for (let i = o; i < numeros.length; i += 1) {
+        const li = document.createElement("li");
+        li.innerText = numeros[i];
+        ul.appendChild(li);
+      }
+      rightContent.appendChild(ul);
+
+      //tarefa 9
+      for (let i = 0; i < 3; i += 1) {
+        const h3 = document.createElement("h3");
+        h3.innerText = i;
+        mainContent.appendChild(h3);
+      }
+    </script>
+  </body>
+</html>
